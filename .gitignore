@@ -1,3 +1,12 @@
-.vargrant/
+# Vagrant의 로컬 가상 머신 식별 정보 및 로컬 설정 (절대 올리면 안 됨)
+.vagrant/
 
-ubuntu-bionic-18.04-cloudimg-console.log
+# 큰 용량의 가상 디스크 파일, 로그 파일 및 다운로드된 이미지 제외
+*.box
+*.vmdk
+*.vdi
+*.ova
+ubuntu-bionic-*
+
+# (선택) 만약 Vagrant 실행 중 생성되는 로그가 있다면 제외
+vagrant_log_*
