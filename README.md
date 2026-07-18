@@ -20,7 +20,7 @@
 프로젝트 루트 디렉토리에서 아래 명령어를 통해 가상 머신 인프라를 프로비저닝하고 호스트와 통신을 연결합니다.
 
 ```bash
-# 가상 머신 설정 파일(Vagrantfile) 생성
+# 가상 머신 설정 파일(Vagrantfile) 생성 (Vagrantfile 이미 있다면 생략)
 $ vagrant init ubuntu/bionic64
 
 # 가상 머신 생성 및 백그라운드 구동
@@ -28,3 +28,7 @@ $ vagrant up
 
 # 구동된 리눅스 가상 머신 내부로 SSH 접속
 $ vagrant ssh
+
+# 구동된 머신 일시정지
+$ vagrant halt
+
